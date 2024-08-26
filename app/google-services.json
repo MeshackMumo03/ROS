@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483311658666",
+    "project_id": "reportonsale",
+    "storage_bucket": "reportonsale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483311658666:android:14eb71599ecfad88afd2d3",
+        "android_client_info": {
+          "package_name": "com.example.ros"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7cHNqkwD8yYQ2kzd5CW5wn9QJhdbnKHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

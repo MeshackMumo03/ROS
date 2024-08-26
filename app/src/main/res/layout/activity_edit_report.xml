@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditReport">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:background="?attr/colorPrimary"
+        android:titleTextColor="?attr/colorSurface">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Edit Report"
+            android:textColor="?attr/colorSurface"
+            android:textSize="20sp" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:hint="Date" />
+
+    <EditText
+        android:id="@+id/profit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:hint="Profit" />
+
+    <EditText
+        android:id="@+id/loss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profit"
+        android:hint="Loss" />
+
+    <EditText
+        android:id="@+id/money_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loss"
+        android:hint="Notes" />
+
+    <EditText
+        android:id="@+id/money_coins"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_notes"
+        android:hint="Coins" />
+
+    <EditText
+        android:id="@+id/money_paybill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_coins"
+        android:hint="Paybill" />
+
+    <EditText
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/money_paybill"
+        android:hint="Total" />
+
+    <EditText
+        android:id="@+id/expenses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/total"
+        android:hint="Expenses" />
+
+    <ImageView
+        android:id="@+id/report_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/expenses"
+        android:src="@drawable/ic_add_photo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_image"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20sp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Delete" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_image"
+        android:layout_alignEnd="@id/delete"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="-262dp"
+        android:layout_marginRight="-260dp"
+        android:text="Save" />
+
+</RelativeLayout>
